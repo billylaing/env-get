@@ -17,5 +17,4 @@ var token = env.get('TOKEN'); // throws Error
 // HOSTNAME set
 var hostname = env.get('HOSTNAME'); 
 console.log(hostname); // blaing.io
-
 ```
