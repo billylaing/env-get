@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "babel index.js -d dist/",
-    "test": "babel-node tests/index.js | faucet",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "test": "babel-node tests/index.js | faucet"
   },
   "repository": {
     "type": "git",
