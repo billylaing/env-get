@@ -1,7 +1,7 @@
 module.exports = {
     get: function get(variableName, optionalDefault) {
         var value = process.env[variableName] || optionalDefault;
-        if (value) return value;
+        if (typeof value != 'undefined') return value;
         throw new Error('Env variable ' + variableName + 'not found, and no default supplied!');
     }
 };
