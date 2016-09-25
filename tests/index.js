@@ -27,7 +27,7 @@ test('no var and default should return the default', (assert) => {
     assert.equals(
         testVar,
         DEFAULT_VALUE,
-        'If there is an empty string in ENV it should use the default.'
+        'If ENV variable is undefined and default set should return default.'
     );
 
     assert.end();
@@ -40,7 +40,7 @@ test('empty string and no default should throw an error', (assert) => {
 
     assert.throws(
         () => env.get(VARIABLE_NAME),
-        'If ENV variable is undefined and no default should throw an error.'
+        'If there is an empty string in ENV no default should throw and error.'
     );
 
     assert.end();
