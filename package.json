@@ -1,0 +1,25 @@
+{
+  "name": "env-get",
+  "version": "1.0.0",
+  "description": "simple tool to wrap fetching of env variables in node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billylaing/env-get.git"
+  },
+  "keywords": [
+    "node",
+    "env",
+    "12-factor",
+    "config"
+  ],
+  "author": "blaing@blaing.io",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/billylaing/env-get/issues"
+  },
+  "homepage": "https://github.com/billylaing/env-get#readme"
+}
