@@ -1,18 +1,16 @@
-var test = require('tape');
-var env = require('../');
+import test from 'tape';
+import env from '../';
 
-var VARIABLE_NAME = 'TEST_VARIABLE';
-var VARIABLE_VALUE = 'variable';
-var DEFAULT_VALUE = 'default';
+const VARIABLE_NAME = 'TEST_VARIABLE';
+const VARIABLE_VALUE = 'variable';
+const DEFAULT_VALUE = 'default';
 
-test('no var and no default should throw an error', function(assert) {
+test('no var and no default should throw an error', (assert) => {
 
     delete process.env[VARIABLE_NAME];
 
     assert.throws(
-        function() {
-            env.get(VARIABLE_NAME);
-        },
+        () => env.get(VARIABLE_NAME),
         'If ENV variable is undefined and no default should throw an exception.'
     );
 
@@ -20,11 +18,11 @@ test('no var and no default should throw an error', function(assert) {
 
 });
 
-test('no var and default should return the default', function(assert) {
+test('no var and default should return the default', (assert) => {
 
     delete process.env[VARIABLE_NAME];
 
-    var testVar = env.get(VARIABLE_NAME, DEFAULT_VALUE);
+    const testVar = env.get(VARIABLE_NAME, DEFAULT_VALUE);
 
     assert.equals(
         testVar,
@@ -36,14 +34,12 @@ test('no var and default should return the default', function(assert) {
 
 });
 
-test('empty string and no default should throw an error', function(assert) {
+test('empty string and no default should throw an error', (assert) => {
 
     process.env[VARIABLE_NAME] = "";
 
     assert.throws(
-        function() {
-            env.get(VARIABLE_NAME);
-        },
+        () => env.get(VARIABLE_NAME),
         'If ENV variable is undefined and no default should throw an error.'
     );
 
@@ -51,11 +47,11 @@ test('empty string and no default should throw an error', function(assert) {
 
 });
 
-test('empty string and default should return default', function(assert) {
+test('empty string and default should return default', (assert) => {
 
     process.env[VARIABLE_NAME] = "";
 
-    var testVar = env.get(VARIABLE_NAME, DEFAULT_VALUE);
+    const testVar = env.get(VARIABLE_NAME, DEFAULT_VALUE);
 
     assert.equals(
         testVar,
@@ -67,11 +63,11 @@ test('empty string and default should return default', function(assert) {
 
 });
 
-test('var set and no default should return var', function(assert) {
+test('var set and no default should return var', (assert) => {
 
     process.env[VARIABLE_NAME] = VARIABLE_VALUE;
 
-    var testVar = env.get(VARIABLE_NAME);
+    const testVar = env.get(VARIABLE_NAME);
 
     assert.equals(
         testVar,
@@ -83,11 +79,11 @@ test('var set and no default should return var', function(assert) {
 
 });
 
-test('var set and default should return var', function(assert) {
+test('var set and default should return var', (assert) => {
 
     process.env[VARIABLE_NAME] = VARIABLE_VALUE;
 
-    var testVar = env.get(VARIABLE_NAME, DEFAULT_VALUE);
+    const testVar = env.get(VARIABLE_NAME, DEFAULT_VALUE);
 
     assert.equals(
         testVar,
