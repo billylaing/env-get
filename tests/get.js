@@ -50,7 +50,7 @@ test('empty string and no default should throw an error', function(t) {
 test('empty string and default should return default', function(t) {
     t.plan(1);
 
-    process.env.TEST = "";
+    process.env.[TEST_VARIABLE] = "";
     var defaultValue = 'default';
 
     var testVar = env.get(TEST_VARIABLE, defaultValue);
