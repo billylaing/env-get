@@ -73,7 +73,7 @@ test('var set and no default should return var', function(t) {
     t.equals(
         testVar,
         VARIABLE_VALUE,
-        'If there is an empty string in ENV it should use the default.'
+        'If the variable is set it should use the that value.'
     );
 
 });
@@ -88,7 +88,7 @@ test('var set and default should return var', function(t) {
     t.equals(
         testVar,
         VARIABLE_VALUE,
-        'If there is an empty string in ENV it should use the default.'
+        'If the variable is set it should use the that value.'
     );
 
 });
