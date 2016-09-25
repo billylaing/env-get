@@ -50,7 +50,7 @@ test('empty string and no default should throw an error', function(t) {
 test('empty string and default should return default', function(t) {
     t.plan(1);
 
-    process.env.[TEST_VARIABLE] = "";
+    process.env[TEST_VARIABLE] = "";
     var defaultValue = 'default';
 
     var testVar = env.get(TEST_VARIABLE, defaultValue);
@@ -58,6 +58,39 @@ test('empty string and default should return default', function(t) {
     t.equals(
         testVar,
         defaultValue,
+        'If there is an empty string in ENV it should use the default.'
+    );
+
+});
+
+test('var set and no default should return var', function(t) {
+    t.plan(1);
+
+    var variableValue = "variable";
+    process.env[TEST_VARIABLE] = variableValue;
+
+    var testVar = env.get(TEST_VARIABLE);
+
+    t.equals(
+        testVar,
+        variableValue,
+        'If there is an empty string in ENV it should use the default.'
+    );
+
+});
+
+test('var set and default should return var', function(t) {
+    t.plan(1);
+
+    var variableValue = "variable";
+    process.env[TEST_VARIABLE] = variableValue;
+    var defaultValue = 'default';
+
+    var testVar = env.get(TEST_VARIABLE, defaultValue);
+
+    t.equals(
+        testVar,
+        variableValue,
         'If there is an empty string in ENV it should use the default.'
     );
 
