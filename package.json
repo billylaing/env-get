@@ -1,11 +1,10 @@
 {
   "name": "env-get",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "simple tool to wrap fetching of env variables in node.js",
   "main": "dist/index.js",
   "scripts": {
-    "build": "babel index.js -d dist/",
-    "prepublish": "npm run test && npm run build",
+    "prepublish": "npm run test",
     "test": "babel-node tests/index.js | faucet"
   },
   "repository": {
