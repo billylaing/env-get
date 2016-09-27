@@ -31,7 +31,7 @@ test('environment variable not set', (assert) => {
 
 test('empty string environment variable', (assert) => {
 
-    process.env[VARIABLE_NAME] = "";
+    process.env[VARIABLE_NAME] = '';
 
     const withDefault = env.get(VARIABLE_NAME, DEFAULT_VALUE);
 
