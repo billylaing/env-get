@@ -21,6 +21,7 @@ test('environment variable not set', (assert) => {
 
     assert.throws(
         noDefault,
+        new RegExp(`Env variable ${VARIABLE_NAME} not found, and no default supplied!`),
         'If ENV variable is undefined and no default should throw an exception.'
     );
 
@@ -44,6 +45,7 @@ test('empty string environment variable', (assert) => {
 
     assert.throws(
         noDefault,
+        new RegExp(`Env variable ${VARIABLE_NAME} not found, and no default supplied!`),
         'If there is an empty string in ENV and no default should throw an error.'
     );
 
