@@ -1,0 +1,8 @@
+.babelrc
+.eslintignore
+.eslintrc
+.gitignore
+.npmignore
+npm-shrinkwrap.json
+node_modules/
+tests/
