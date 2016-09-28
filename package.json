@@ -1,6 +1,6 @@
 {
   "name": "env-get",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "simple tool to wrap fetching of env variables in node.js",
   "main": "dist/index.js",
   "scripts": {
