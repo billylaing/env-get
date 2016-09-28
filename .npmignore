@@ -4,5 +4,6 @@
 .gitignore
 .npmignore
 npm-shrinkwrap.json
+.idea/
 node_modules/
 tests/

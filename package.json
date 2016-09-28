@@ -1,8 +1,8 @@
 {
   "name": "env-get",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "simple tool to wrap fetching of env variables in node.js",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
     "coverage": "babel-node ./node_modules/.bin/istanbul cover tests/index.js",
     "lint": "eslint .",
