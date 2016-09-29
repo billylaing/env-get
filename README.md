@@ -12,7 +12,7 @@ This utility was designed to support twelve-factor applications and the strict s
 [![Coverage Status][coverage-image]][coverage-url]
 
 #### Usage:
-```
+```javascript
 var env = require('env-get');
 
 // PORT not set
