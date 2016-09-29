@@ -1,7 +1,10 @@
 # env-get
 
 Simple utility to get environment variables with an optional default.  
-Throws an error if the variable is not found and no defult is supplied.
+Throws an error if the variable is not found and no default is supplied.
+
+This utility was designed to support twelve-factor applications and the strict separation of code and config. 
+[Read more about it here.](https://12factor.net/config)
 
 [![CircleCI](https://circleci.com/gh/billylaing/env-get/tree/master.svg?style=svg)](https://circleci.com/gh/billylaing/env-get/tree/master)
 
@@ -20,3 +23,5 @@ var token = env.get('TOKEN'); // throws Error
 var hostname = env.get('HOSTNAME'); 
 console.log(hostname); // blaing.io
 ```
+
+
