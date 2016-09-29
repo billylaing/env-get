@@ -1,9 +1,15 @@
+# dirs
+.idea/
+.nyc_output/
+coverage/
+node_modules/
+tests/
+
+# files
 .babelrc
 .eslintignore
 .eslintrc
 .gitignore
 .npmignore
+circle.yml
 npm-shrinkwrap.json
-.idea/
-node_modules/
-tests/
