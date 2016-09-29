@@ -16,7 +16,9 @@
   "keywords": [
     "node",
     "env",
+    "env-var",
     "12-factor",
+    "twelve-factor",
     "config"
   ],
   "author": "blaing@blaing.io",
