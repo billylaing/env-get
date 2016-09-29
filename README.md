@@ -23,5 +23,3 @@ var token = env.get('TOKEN'); // throws Error
 var hostname = env.get('HOSTNAME'); 
 console.log(hostname); // blaing.io
 ```
-
-
