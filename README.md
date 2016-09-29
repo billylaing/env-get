@@ -7,7 +7,7 @@ This utility was designed to support twelve-factor applications and the strict s
 [Read more about it here.](https://12factor.net/config)
 
 [![CircleCI](https://circleci.com/gh/billylaing/env-get/tree/master.svg?style=svg)](https://circleci.com/gh/billylaing/env-get/tree/master)
-[![Coverage Status](https://coveralls.io/repos/github/billylaing/env-get/badge.svg?branch=master)](https://coveralls.io/github/billylaing/env-get?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/billylaing/env-get/badge.svg)](https://coveralls.io/github/billylaing/env-get)
 
 #### Usage:
 ```
