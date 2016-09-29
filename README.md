@@ -24,3 +24,5 @@ var token = env.get('TOKEN'); // throws Error
 var hostname = env.get('HOSTNAME'); 
 console.log(hostname); // blaing.io
 ```
+
+[![NPM](https://nodei.co/npm/env-get.png?downloads=true)](https://nodei.co/npm/env-get/)
