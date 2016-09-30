@@ -33,8 +33,8 @@ console.log(hostname); // blaing.io
 [test-url]: https://circleci.com/gh/billylaing/env-get/tree/master
 [coverage-url]: https://coveralls.io/github/billylaing/env-get
 
-[npm-image]: https://img.shields.io/npm/v/env-get.svg?maxAge=2592000
-[downloads-total-image]: https://img.shields.io/npm/dt/env-get.svg?maxAge=2592000
-[downloads-month-image]: https://img.shields.io/npm/dm/env-get.svg?maxAge=2592000
-[test-image]: https://img.shields.io/circleci/project/billylaing/env-get.svg?label=tests&maxAge=2592000
+[npm-image]: https://img.shields.io/npm/v/env-get.svg
+[downloads-total-image]: https://img.shields.io/npm/dt/env-get.svg
+[downloads-month-image]: https://img.shields.io/npm/dm/env-get.svg
+[test-image]: https://img.shields.io/circleci/project/billylaing/env-get.svg?label=tests
 [coverage-image]: https://coveralls.io/repos/github/billylaing/env-get/badge.svg
