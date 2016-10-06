@@ -8,7 +8,7 @@ tests/
 # files
 .babelrc
 .eslintignore
-.eslintrc
+.eslintrc.json
 .gitignore
 .npmignore
 circle.yml
