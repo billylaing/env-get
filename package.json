@@ -7,6 +7,7 @@
     "coveralls": "nyc npm run test && nyc report --reporter=text-lcov | coveralls",
     "coverage": "nyc npm run test && nyc report --reporter=lcov",
     "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "prepublish": "npm run lint && npm run test",
     "test": "babel-node tests/index.js | faucet"
   },
