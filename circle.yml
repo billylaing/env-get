@@ -1,5 +1,10 @@
+dependencies:
+  pre:
+    - rm npm-shrinkwrap.json
+
 test:
   override:
-    - npm run test:circleci
+    - mkdir -p $CIRCLE_TEST_REPORTS/xunit
+    - npm run test:circle
   post:
     - npm run coveralls

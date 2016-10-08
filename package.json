@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "prepublish": "npm run lint && npm test",
     "test": "babel-node tests/index.js | faucet",
-    "test:circleci": "babel-node tests/index.js | tap-xunit > $CIRCLE_TEST_REPORTS/junit/test-results.xml"
+    "test:circle": "babel-node tests/index.js | tap-xunit  > $CIRCLE_TEST_REPORTS/xunit/test-results.xml"
   },
   "repository": {
     "type": "git",
