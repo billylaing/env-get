@@ -1,0 +1,5 @@
+test:
+  override:
+    - npm run test:circleci
+  post:
+    - npm run coveralls
