@@ -2,7 +2,7 @@
   "name": "env-get",
   "version": "1.0.8",
   "description": "simple tool to wrap fetching of env variables in node.js",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "coverage": "nyc npm test >> /dev/null && nyc report",

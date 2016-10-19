@@ -15,17 +15,17 @@ This utility was designed to support twelve-factor applications and the strict s
 
 #### Usage:
 ```javascript
-var env = require('env-get');
+const env = require('env-get');
 
 // PORT not set
-var port = env.get('PORT', 4000);
+const port = env.get('PORT', 4000);
 console.log(port); // 4000
 
 // TOKEN not set
-var token = env.get('TOKEN'); // throws Error 
+const token = env.get('TOKEN'); // throws Error 
 
 // HOSTNAME set
-var hostname = env.get('HOSTNAME'); 
+const hostname = env.get('HOSTNAME'); 
 console.log(hostname); // blaing.io
 ```
 [12-factor-config-url]:https://12factor.net/config
