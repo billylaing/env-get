@@ -1,7 +1,3 @@
-dependencies:
-  pre:
-    - rm npm-shrinkwrap.json
-
 test:
   override:
     - mkdir -p $CIRCLE_TEST_REPORTS/xunit
