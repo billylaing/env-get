@@ -1,3 +1,6 @@
-general:
-  artifacts:
-    - ./coverage
+test:
+  override:
+    - mkdir -p $CIRCLE_TEST_REPORTS/xunit
+    - npm run test:circle
+  post:
+    - npm run coveralls
