@@ -9,7 +9,6 @@ This utility was designed to support twelve-factor applications and the strict s
 
 [![NPM Version][npm-image]][npm-url]
 [![NPM Monthly][downloads-month-image]][npm-url]
-[![NPM Downloads][downloads-total-image]][npm-url]
 [![Test Status][test-image]][test-url]
 [![Coverage Status][coverage-image]][coverage-url]
 
@@ -34,7 +33,6 @@ console.log(hostname); // blaing.io
 [coverage-url]: https://coveralls.io/github/billylaing/env-get
 
 [npm-image]: https://img.shields.io/npm/v/env-get.svg
-[downloads-total-image]: https://img.shields.io/npm/dt/env-get.svg
 [downloads-month-image]: https://img.shields.io/npm/dm/env-get.svg
 [test-image]: https://img.shields.io/circleci/project/billylaing/env-get.svg?label=tests
 [coverage-image]: https://coveralls.io/repos/github/billylaing/env-get/badge.svg
