@@ -76,3 +76,22 @@ test('environment variable set', (assert) => {
     assert.end();
 
 });
+
+test('set an environment variable', (assert) => {
+    delete process.env[VARIABLE_NAME];
+    env.set(VARIABLE_NAME, VARIABLE_VALUE)
+    const noDefault = env.get(VARIABLE_NAME);
+    
+    assert.equals(
+        noDefault,
+        VARIABLE_VALUE,
+        'If the variable is set it should use the that value.'
+    );
+    assert.equals(
+        process.env[VARIABLE_NAME],
+        VARIABLE_VALUE,
+        'If the variable is set it should use the that value.'
+    );
+
+    assert.end();
+});
