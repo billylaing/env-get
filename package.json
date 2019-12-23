@@ -38,7 +38,7 @@
     "eslint-config-blaing": "^1.0.0",
     "faucet": "0.0.1",
     "istanbul": "^0.4.5",
-    "nyc": "^8.3.0",
+    "nyc": "^15.0.0",
     "tap-xunit": "^2.3.0",
     "tape": "^4.6.2"
   }
